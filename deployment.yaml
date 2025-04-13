@@ -1,0 +1,18 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: april-prt
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: prt
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        app: prt
+    spec:
+      containers:
+        - name: cont1
+          image: shahfahed/april-prt:"{{ build }}"
