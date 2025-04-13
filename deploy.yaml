@@ -6,4 +6,4 @@
       ansible.builtin.shell: kubectl apply -f deployment.yaml
 
     - name: apply np-svc.yaml
-      ansible.builtin.shell: kubectl apply -f svc.yaml
+      ansible.builtin.shell: kubectl apply -f np-svc.yaml
