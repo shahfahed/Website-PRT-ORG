@@ -15,4 +15,4 @@ spec:
     spec:
       containers:
         - name: cont1
-          image: shahfahed/april-prt:"{{ build }}"
+          image: shahfahed/april-prt-1:"{{ build }}"
