@@ -1,0 +1,9 @@
+- name: execute deployment on k8s
+  hosts: kmaster
+  become: yes
+  tasks:
+    - name: apply deployment.yaml
+      ansible.builtin.shell: kubectl apply -f deployment.yaml
+
+    - name: apply np-svc.yaml
+      ansible.builtin.shell: kubectl apply -f svc.yaml
